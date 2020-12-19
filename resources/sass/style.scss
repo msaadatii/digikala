@@ -1,0 +1,137 @@
+
+.navbar-digikala-header
+{
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+  min-width: 1009px;
+  max-width: 1676px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
+  height: 75px;
+  position: relative;
+  padding: 18px 0;
+  z-index: 100 !important;
+}
+.nav-menu-dk{
+background-color: #616161 !important;
+min-height: 3rem;
+}
+.dk-searchbox{
+margin-right:130px;
+width: 600px;
+height: 80%;
+border-radius: 8px;
+position: relative;
+font-weight: 300;
+}
+.control.has-icons-left .icon {
+    color: #ffffff;
+    height: 2.5em;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 2.5em;
+    z-index: 4;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.is-dk-red{
+background-color: #ef5661;
+color: #ffffff;
+}
+
+.is-dk-green{
+
+  background-color: #00bfd6;
+  border-color: #00bfd6;
+  color: #ffffff;
+}
+.dk-navbar-dropdown{
+text-align: center;
+}
+.dk-menu-item{
+color: #ffffff;
+}
+
+.dk-product{
+  background-color: #fff;
+  -webkit-box-shadow: 0 12px 12px 0 hsla(0,0%,71%,.11);
+  box-shadow: 0 12px 12px 0 hsla(0,0%,71%,.11);
+  border: 1px solid #e4e4e4;
+  margin-bottom: 25px;
+  width: 100%;
+
+}
+
+.dk-product-card{
+  border: none ;
+  box-shadow: none ;
+}
+.dk-product-card:hover
+ {
+ box-shadow: 0 14px 28px rgba(0, 0, 0,0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+ bottom: 2px;
+}
+
+.dk-card-product-title{
+text-align: center;
+}
+
+.dk-cart-right-panel{
+  background-color: #fff;
+  -webkit-box-shadow: 0 12px 12px 0 hsla(0,0%,71%,.11);
+  box-shadow: 0 12px 12px 0 hsla(0,0%,71%,.11);
+  border: 1px solid #e4e4e4;
+  margin-bottom: 25px;
+  width: 100%;
+  margin: 5px;
+}
+.dk-cart-left-panel{
+  background-color: #fff;
+  -webkit-box-shadow: 0 12px 12px 0 hsla(0,0%,71%,.11);
+  box-shadow: 0 12px 12px 0 hsla(0,0%,71%,.11);
+  border: 1px solid #e4e4e4;
+  margin-bottom: 25px;
+  width: 100%;
+  margin: 5px;
+}
+.empty-cart{
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+.products-header{
+  display : flex;
+  justify-content: space-between;
+}
+//pagination stayle
+
+.pagination {
+   padding: 5px ;
+   margin-bottom:  20px;
+}
+li.page-item{
+padding : 5px;
+width : 3%;
+border-radius: 50%;
+
+}
+a.page-link{
+    color: #222;
+    line-height: 40px;
+    padding: 0;
+    text-align: center;
+}
+li.page-item.active{
+   background-color: #00bfd6;
+    color: #fff;
+}
+.footer{
+    background-color: #ECEFF1 !important;
+    padding: 3rem 1.5rem 6rem;
+}
