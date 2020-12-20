@@ -66,7 +66,7 @@
                     <form action ="{{route('cart.saveForLater',$item->rowId)}}"method="post">
                       {{csrf_field()}}
                       <button type="submit" class="button is-info is-outlinedn"><i class="fas fa-save fa-1x fa-fw"></i> </button>
-                      <span class="is-size-6 has-text-grey ">ذخیره در لیست خرید بعدی</span>
+                      <span class="is-size-6 has-text-grey" href="{{route('checkout.index')}}">ذخیره در لیست خرید بعدی</span>
                     </form>
                   </td>
                 </tr>
@@ -119,7 +119,8 @@
                               </div>
                        @endif
                        <hr>
-                       <button type ="button" name="button" class="button is-success is-fullwidth">مرحله بعدی </button>
+
+                       <a class="button is-success is-fullwidth">مرحله بعدی </a>
                </div>
          </div>
 

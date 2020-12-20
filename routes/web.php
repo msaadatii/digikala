@@ -25,6 +25,8 @@ Route ::patch('/cart/{product}','CartController@update')->name('cart.update');
 Route::post('/cart/saveForLater/{product}','SaveForLaterController@saveForLater')->name('cart.saveForLater');
 Route:: delete('/cart/deleteSavedForLater/{product}','SaveForLaterController@destroy')->name('cart.destroySavedForLater');
 Route:: post('/cart/switchFromSaveToCart/{product}','SaveForLaterController@switchFromSaveToCart')->name('cart.switchFromSaveToCart');
+//Checkout
+Route::get('/checkout','CheckoutController@index')->name('checkout.index');
 //coupons
 Route::post('/coupon','CouponController@store')->name('coupon.store');
 Route::delete('/coupon','CouponController@destroy')->name('coupon.destroy');
