@@ -26,7 +26,10 @@ Route::post('/cart/saveForLater/{product}','SaveForLaterController@saveForLater'
 Route:: delete('/cart/deleteSavedForLater/{product}','SaveForLaterController@destroy')->name('cart.destroySavedForLater');
 Route:: post('/cart/switchFromSaveToCart/{product}','SaveForLaterController@switchFromSaveToCart')->name('cart.switchFromSaveToCart');
 //Checkout
-Route::get('/checkout','CheckoutController@index')->name('checkout.index');
+Route::get('/checkout','CheckoutController@index')->name('checkout.index')->middleware('auth');
+Route::post('/checkout','CheckoutController@store')->name('checkout.pay')->middleware('auth');
+Route::get('/checkout/callback','CheckoutController@zarinpalCallBack')->name('checkout.callback')->middleware('auth');
+Route::get('/checkout/successfull{refid}','CheckoutController@successfull')->name('checkout.successfull');
 //coupons
 Route::post('/coupon','CouponController@store')->name('coupon.store');
 Route::delete('/coupon','CouponController@destroy')->name('coupon.destroy');

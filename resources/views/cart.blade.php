@@ -66,7 +66,7 @@
                     <form action ="{{route('cart.saveForLater',$item->rowId)}}"method="post">
                       {{csrf_field()}}
                       <button type="submit" class="button is-info is-outlinedn"><i class="fas fa-save fa-1x fa-fw"></i> </button>
-                      <span class="is-size-6 has-text-grey" href="{{route('checkout.index')}}">ذخیره در لیست خرید بعدی</span>
+                      <span class="is-size-6 has-text-grey">ذخیره در لیست خرید بعدی</span>
                     </form>
                   </td>
                 </tr>
@@ -114,13 +114,13 @@
                                   <form action="{{route('coupon.store')}}" method="post">
                                       {{csrf_field()}}
                                       <input type="text" name="coupon_code" placeholder="کد تخفیف ؟ " class="input">
-                                      <button type="submit" class="button is-success is-fullwidth" name="button">اعمال تخفیف</button>
+                                      <button type="submit" class="button is-dk-red is-fullwidth" name="button" style="padding:25px;" >اعمال تخفیف</button>
                                   </form>
                               </div>
                        @endif
                        <hr>
 
-                       <a class="button is-success is-fullwidth">مرحله بعدی </a>
+                       <a class="button is-dk-red is-fullwidth"  href="{{route('checkout.index')}}" style="padding:25px;" >ادامه ثبت سفارش </a>
                </div>
          </div>
 
@@ -175,7 +175,7 @@
     <a href="" class=" is-success">ثبت نام در دیجی کالا </a>
   </div>
   <hr>
-  <a href="{{route('products')}}">ادامه فرآیند خرید </a>
+  <a href="{{route('products')}}">دیدن فروشگاه</a>
   <hr>
   </div>
   <h1  class="is-size-5"> لیست خرید بعدی : </h1>
