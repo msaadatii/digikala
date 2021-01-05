@@ -37,3 +37,7 @@ Route::delete('/coupon','CouponController@destroy')->name('coupon.destroy');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//Search
+Route::get('/search','ShopController@search')->name('search');
+Route::get('autoComplete-ajax',array('as'=>'autocomplete.ajax','uses'=>'ShopController@ajaxSearchData'));

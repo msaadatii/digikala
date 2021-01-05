@@ -69,4 +69,25 @@ class ShopController extends Controller
       ]);
     }
 
+    public function search(Request $request){
+
+        $request->validate(['keyword'=>'required']);
+        $categories = Category ::all();
+        $query = $request->input('keyword');
+        //do search
+        $products =Product :: search($query)->paginate(10);
+
+        return view('search-list')->with([
+          'products'=>$products,
+          'categories'=>$categories,
+        ]);
+
+    }
+    public function ajaxSearchData(Request $request)
+    {
+       $query = $request ->get('query','');
+       $products = Product :: where('name','LIKE','%'.$query.'%')->get();
+       return response()->json($products);
+    }
+
   }

@@ -16,6 +16,18 @@
     </div>
     {{--footer--}}
     @include('layout.footer')
-  <script src="js/scripts.js"></script>
+  <script src="{{asset('js/app.js')}}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+
+  <script type="text/javascript">
+      var url = "{{route('autocomplete.ajax')}}";
+      $('#keyword').typeahead({
+        source: function (query,process){
+          return $.get(url,{ query:query },function(data){
+              return process(data);
+          });
+        }
+      });
+  </script>
 </body>
 </html>

@@ -10,14 +10,17 @@
       <span aria-hidden="true"></span>
     </a>
     {{--search box --}}
-    <div class="dk-searchbox">
-      <div class="control  has-icons-left">
-        <input class="input" type="text" placeholder=" نام کالا ، برند  و یا دسته مورد نظر خود را جستجو کنید ...">
-        <span class="icon is-small is-left is-dk-red ">
-          <i class="fa fa-search has-text-white" ></i>
-        </span>
+    <form  action="{{route('search')}}" method="GET">
+      <div class="dk-searchbox">
+        <div class="control  has-icons-left">
+          <input name="keyword"  id="keyword" class="input" type="text" placeholder="جستجو در دیجی کالا  ...">
+          <span class="icon is-small is-left is-dk-red ">
+          <button type="submit" class="button is-danger fas fa-search has-text-white "></button>
+          </span>
+        </div>
       </div>
-    </div>
+    </form>
+
   </div>
 
   <div id="navbarMenu" class="navbar-menu">
