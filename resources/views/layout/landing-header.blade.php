@@ -48,9 +48,11 @@
               کاربر جدید هستید ؟  <a href ="{{route('register')}}"> ثبت نام  <a/>
             </div>
           @else
-          <div class="navbar-item">
-             لیست سفارشات
-           </div>
+            <a href="{{route('user.orders')}}">
+              <div class="navbar-item">
+               لیست سفارشات
+               </div>
+            </a>
             <div class="navbar-item">
                 <a class="dropdown-item" href="{{ route('logout') }}"
                    onclick="event.preventDefault();
@@ -64,7 +66,7 @@
             </div>
           @endguest
           <hr class="navbar-divider">
-          <a class="navbar-item">
+          <a  href="{{route('user.edit')}}" class="navbar-item">
               <i class="far fa-user fa-fw"></i> پروفایل
           </a>
           <a class="navbar-item">

@@ -41,3 +41,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Search
 Route::get('/search','ShopController@search')->name('search');
 Route::get('autoComplete-ajax',array('as'=>'autocomplete.ajax','uses'=>'ShopController@ajaxSearchData'));
+
+Route::get('/my-profile','UserController@edit')->name('user.edit')->middleware('auth');
+Route::patch('/my-profile','UserController@update')->name('user.update')->middleware('auth');
+Route::get('my-orders','UserController@orders')->name('user.orders')->middleware('auth');
+Route::get('/order-products/{id}','UserController@order_products')->name('order.products')->middleware('auth');
