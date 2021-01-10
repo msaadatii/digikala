@@ -1,7 +1,7 @@
 @extends('layout.layout-landing')
 @section('products')
-  <section class="hero is-fullheight">
-          <div class="hero-body">
+  <section class="hero is-fullwidth">
+          <div class="hero-body is-fullwidth">
               <div class="container has-text-centered">
                   <div class="column is-4 is-offset-4">
                       <h3 class="title has-text-grey">اطلاعات کاربری</h3>

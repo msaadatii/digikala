@@ -62,7 +62,7 @@
           </tr>
       </table>
     <hr>
-     <button type="submit" class="button is-dk-red is-fullwidth "style="padding:25px;" >مرحله بعدی </button>
+     <button type="submit" class="button is-info is-fullwidth "style="padding:25px;" >مرحله بعدی </button>
       </div>
     </form>
  </div>

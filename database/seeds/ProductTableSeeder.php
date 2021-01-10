@@ -12,94 +12,196 @@ class ProductTableSeeder extends Seeder
     public function run()
     {
 
-      //laptop category
+      //electronic-devices
         Product::create([
-          'name'=>'MacBook Pro MD 101',
-          'slug'=>'macbook-pro-md-101',
-          'details'=>'13inch Monitor , 500GB SSD , 4GB RAM',
-          'price'=>53799,
-          'description'=>' Apple MacBook Pro MD101HN/A is a macOS laptop with a 13.30-inch display that has a resolution of 2560x1600 pixels. It is powered by a Core i5 processor and it comes with 4GB of RAM. The Apple MacBook Pro MD101HN/A packs 512GB of SSD storage.Connectivity options include Wi-Fi 802.11 ac, Bluetooth and it comes with 2 USB ports (2 x USB 3.0), Mic In ports.As of 12th November 2020, Apple MacBook Pro MD101HN/A price in India starts at Rs. 53,799.'
+          'name'=>'باتری قلمی آلکالاین سونی',
+          'slug'=>'باتری-قلمی-آلکالاین-سونی-am3-lr6',
+          'details'=>'Sony AM3 LR6',
+          'price'=>5000,
+          'description'=>'این دسته از باتری‌های قلمی سونی به‌صورت بسته‌های دو عددی تولید و عرضه‌شده است. اندازه آن‌ها AA یا قلمی است؛ تکنولوژی ساختی که در تولید این نوع باتری به‌کاررفته ، آلکالاین بوده و دارای پایداری انرژی الکتریکی و عمر مفید طولانی است. این مدل قابلیت شارژ مجدد ندارد، پس طبیعتا نمی‌توان پس از اتمام انرژی الکتریکی دوباره آن را شارژ و استفاده کرد. این مدل گزینه‌ای مناسب برای تامین انرژی الکتریکی وسایلی مانند ساعت، اسباب‌بازی، ریموت کنترل و دیگر دستگاه‌هایی است که انرژی موردنیازشان را از باتری‌های قلمی تامین می‌کنند. باتری‌های معمولی و رایج انواع مختلفی چون باتری‌های قلمی، نیم قلمی، سکه‌ای، کتابی دارند. بسته به نیازمان می‌توانیم هرکدام از آن‌ها را تهیه کنیم.  '
         ])->categories()->attach(1);
 
         Product::create([
-          'name'=>'Asus N550JV',
-          'slug'=>'asus-n550jv',
-          'details'=>'15inch Monitor , 1TB SSD , 8GB RAM',
-          'price'=>74999,
-          'description'=>'Very good condition with minimal wear/signs of use. Quad core i7, 8gb ram, nvidia GTX850M. Windows 10 and charger included. This laptop is ready to plow through just about anything you throw at it. Buy from a trusted business--receive top quality!'
+          'name'=>'هدفون بی سیم نیا',
+          'slug'=>'هدفون-بی-سیم-نیا-مدل-q8-851s',
+          'details'=>'NIA Q8-851S Wireless Headphones',
+          'price'=>80000,
+          'description'=>' جنس پوشش روی کاپ صدای این محصول از چرم مصنوعی است که باعث می‌شود هنگام استفاده بلندمدت از آن احساس خستگی به کاربر منتقل نشود. قسمت هدبند قابلیت تغییر ارتفاع را دارد که این ویژگی باعث می‌شود این هدفون گزینه مناسبی برای همه افراد باشد. روی کاپ سمت چپ این محصول یک کلید برای خاموش یا روشن کردن دستگاه به چشم می‌خورد. همچنین در کاپ سمت راست آن یک کلید برای اعمال فرمان‌های پرتکرار تعبیه شده است. یک شیار کارت حافظه هم برای پخش‌موسیقی بدون نیاز به تلفن‌همراه یا پخش‌کننده صوتی وجود دارد. میزان بیس این هدفون به گونه‌ای است که در اولین استفاده از آن بدون شک شگفت‌زده خواهید شد. '
         ])->categories()->attach(1);
 
         Product::create([
-          'name'=>'MacBook Air',
-          'slug'=>'macbook-air',
-          'details'=>'13inch Monitor , 500GB SSD , 8GB RAM',
-          'price'=>29000,
-          'description'=>'Apple-designed M1 chip for a giant leap in CPU, GPU, and machine learning performanceGo longer than ever with up to 18 hours of battery life.8-core CPU delivers up to 3.5x faster performance to tackle projects faster than ever.Up to eight GPU cores with up to 5x faster graphics for graphics-intensive apps and games.16-core Neural Engine for advanced machine learning.8GB of unified memory so everything you do is fast and fluid.FaceTime HD camera with advanced image signal processor for clearer, sharper video calls.'])->categories()->attach(1);
-
-        Product::create([
-          'name'=>'Acer v15 Nitro',
-          'slug'=>'aser-v15-nitro',
-          'details'=>'13inch Monitor , 500GB SSD , 4GB RAM',
-          'price'=>53799,
-          'description'=>' Apple MacBook Pro MD101HN/A is a macOS laptop with a 13.30-inch display that has a resolution of 2560x1600 pixels. It is powered by a Core i5 processor and it comes with 4GB of RAM. The Apple MacBook Pro MD101HN/A packs 512GB of SSD storage.Connectivity options include Wi-Fi 802.11 ac, Bluetooth and it comes with 2 USB ports (2 x USB 3.0), Mic In ports.As of 12th November 2020, Apple MacBook Pro MD101HN/A price in India starts at Rs. 53,799.'
+          'name'=>'شارژر فندکی',
+          'slug'=>'شارژر-فندکی-مدل-ysy-395kc',
+          'details'=>'',
+          'price'=>30000,
+          'description'=>'باتوجه به تکنولوژی شارژ ایمن به کار رفته در این شارژر فندکی از دستگاه‌های متصل به این شارژر در برابر افزایش ناگهانی ولتاژ، جریان و دما محافظت می‌شود و از نوسانات جریانی ممانعت به عمل می‌آید به همین دلیل هیچ گونه آسیبی دستگاه‌های متصل به این شارژر فندکی را تهدید نخواهد کرد. '
         ])->categories()->attach(1);
 
         Product::create([
-          'name'=>'Asus Zenbook UX 305',
-          'slug'=>'asus-zenbook-ux-305',
-          'details'=>'13inch Monitor , 500GB SSD , 4GB RAM',
-          'price'=>53799,
-          'description'=>' Apple MacBook Pro MD101HN/A is a macOS laptop with a 13.30-inch display that has a resolution of 2560x1600 pixels. It is powered by a Core i5 processor and it comes with 4GB of RAM. The Apple MacBook Pro MD101HN/A packs 512GB of SSD storage.Connectivity options include Wi-Fi 802.11 ac, Bluetooth and it comes with 2 USB ports (2 x USB 3.0), Mic In ports.As of 12th November 2020, Apple MacBook Pro MD101HN/A price in India starts at Rs. 53,799.'
+          'name'=>'فلش مموری ایکس انرژی',
+          'slug'=>'فلش-مموری-ایکس-انرژی-مدل-golden',
+          'details'=>'x-Energy GOLDEN GEM-B Flash Memory 32GB',
+          'price'=>40000,
+          'description'=>'این فلش مموری باکیفیت با ظرفیت 32 گیگابایت، می‌تواند حجم قابل توجهی از اطلاعات را انتقال دهد، همچنین سرعت انتقال آن هم قابل توجه است. توجه داشته باشید که فلش مموری ایکس انرژی ر برابر آب و گرد و غبار مقاوم بوده و در صورتی که به صورت ناخواسته در آب بیفتد، دچار مشکل نخواهد شد و جایی برای نگرانی وجود ندارد. همچنین این فلش مموری جذاب و باکیفیت در برابر ضربه و شوک یا هرگونه لرزش مقاوم بوده و هیچ اثر انگشتی هم روی آن نمایان نخواهد شد. '
         ])->categories()->attach(1);
 
         Product::create([
-          'name'=>'Toshiba ChromeBook 2',
-          'slug'=>'toshiba-chromebook-2',
-          'details'=>'13inch Monitor , 500GB SSD , 4GB RAM',
-          'price'=>53799,
-          'description'=>' Apple MacBook Pro MD101HN/A is a macOS laptop with a 13.30-inch display that has a resolution of 2560x1600 pixels. It is powered by a Core i5 processor and it comes with 4GB of RAM. The Apple MacBook Pro MD101HN/A packs 512GB of SSD storage.Connectivity options include Wi-Fi 802.11 ac, Bluetooth and it comes with 2 USB ports (2 x USB 3.0), Mic In ports.As of 12th November 2020, Apple MacBook Pro MD101HN/A price in India starts at Rs. 53,799.'
+          'name'=>'پایه نگهدارنده گوشی و تبلت',
+          'slug'=>'پایه-نگهدارنده-گوشی-و-تبلت-مدل-ok-stand',
+          'details'=>'OK Stand Mobile And Tablet Holder',
+          'price'=>2000,
+          'description'=>' در نگاه اول به این محصول این‌طور برداشت می‌شود که یک عروسک پلاستیکی با دست‌هایش اقدام به نگهداری گوشی روی میزی کرده است، اما خبری از خود عروسک نیست. این محصول در حقیقت یک نوار پلاستیکی انعطاف‌پذیر است که در دو انتهایش گیره‌هایی به شکل دست انسان دارد . کار با آن بسیار ساده است . کافی‌ست قسمت‌های نگه‌دارنده آن را به‌آرامی به‌اندازه عرض گوشی‌تان بازکنید و اجازه دهید که گوشی‌تان در میان آن قرار گیرد و سپس قسمت میانی آن راکمی زاویه دهید تا تکیه‌گاهی بر روی سطح میز ایجاد کند. ازآنجایی‌که دهانه این محصول تا 21 سانتی‌متر باز می‌شود، علاوه بر گوشی‌های موبایل، بسیاری از تبلت های موجود در بازار نیز توسط این پایه پشتیبانی می‌شوند.'
         ])->categories()->attach(1);
 
         Product::create([
-          'name'=>'HP Spectre x2 12-a002',
-          'slug'=>'hp-spectre-x2',
-          'details'=>'13inch Monitor , 500GB SSD , 4GB RAM',
-          'price'=>53799,
-          'description'=>' Apple MacBook Pro MD101HN/A is a macOS laptop with a 13.30-inch display that has a resolution of 2560x1600 pixels. It is powered by a Core i5 processor and it comes with 4GB of RAM. The Apple MacBook Pro MD101HN/A packs 512GB of SSD storage.Connectivity options include Wi-Fi 802.11 ac, Bluetooth and it comes with 2 USB ports (2 x USB 3.0), Mic In ports.As of 12th November 2020, Apple MacBook Pro MD101HN/A price in India starts at Rs. 53,799.'
+          'name'=>'قلم لمسی تاچ پن',
+          'slug'=>'قلم-لمسی-تاچ-پن',
+          'details'=>'Touch Pen Stylus Pen',
+          'price'=>15000,
+          'description'=>'قلم لمسی مناسب برای تمامی صفحه‌نمایش‌های لمسی خازنی تبلت‌ها، موبایل‌ها و کنسول‌های بازی به منظور محافظت از صفحه لمسی دستگاه شما در برابر خط‌وخش و اثر انگشت است.'
         ])->categories()->attach(1);
 
         Product::create([
-          'name'=>'Surface Pro4',
-          'slug'=>'surface-pro4',
-          'details'=>'13inch Monitor , 500GB SSD , 4GB RAM',
-          'price'=>53799,
-          'description'=>' Apple MacBook Pro MD101HN/A is a macOS laptop with a 13.30-inch display that has a resolution of 2560x1600 pixels. It is powered by a Core i5 processor and it comes with 4GB of RAM. The Apple MacBook Pro MD101HN/A packs 512GB of SSD storage.Connectivity options include Wi-Fi 802.11 ac, Bluetooth and it comes with 2 USB ports (2 x USB 3.0), Mic In ports.As of 12th November 2020, Apple MacBook Pro MD101HN/A price in India starts at Rs. 53,799.'
+          'name'=>'گوشی موبایل نوکیا مدل 106 دو سیم کارت',
+          'slug'=>'گوشی-موبایل-نوکیا-مدل 106-دوسیم-کارت',
+          'details'=>'Nokia 106 2018 Dual SIM Mobile Phone',
+          'price'=>300000,
+          'description'=>'نوکیا ۱۰۶ جدید مجهز به یک صفحه نمایش ۱٫۸ اینچی بوده و یک باتری ۸۰۰ میلی آمپری وظیفه تامین انرژی این دستگاه کوچک را بر عهده دارد. این باتری قادر به ارائه انرژی لازم برای ۱۵٫۷ ساعت مکالمه و همچنین ۲۱ روز کارکرد دستگاه در حالت استندبای است که برای یک گوشی ساده رقم خوبی محسوب می شود. نوکیا 106 جدید معرفی شد؛ کوچولوی دست داشتنی 1 بدنه نوکیا ۱۰۶ از پلی کربنات با استحکام بالا تولید شده و رنگ آن در داخل ماده بوده که در نتیجه با استفاده طولانی مدت نیز آسیبی به آن وارد نخواهد شد. همچنین بدنه این گوشی دارای طراحی کوچک و بسیار خوش دست است که کار با آن را بسیار ساده می کند. '
         ])->categories()->attach(1);
 
         Product::create([
-          'name'=>'Acer Aspir E15',
-          'slug'=>'acer-aspir-e15',
-          'details'=>'13inch Monitor , 1TB SSD , 4GB RAM',
-          'price'=>53799,
-          'description'=>' Apple MacBook Pro MD101HN/A is a macOS laptop with a 13.30-inch display that has a resolution of 2560x1600 pixels. It is powered by a Core i5 processor and it comes with 4GB of RAM. The Apple MacBook Pro MD101HN/A packs 512GB of SSD storage.Connectivity options include Wi-Fi 802.11 ac, Bluetooth and it comes with 2 USB ports (2 x USB 3.0), Mic In ports.As of 12th November 2020, Apple MacBook Pro MD101HN/A price in India starts at Rs. 53,799.'
+          'name'=>'برچسب حروف فارسی کیبورد طرح چرم',
+          'slug'=>'برچسب-حروف-فارسی-کیبورد-طرح-چرم',
+          'details'=>'',
+          'price'=>1000,
+          'description'=>'برخی از کیبورد ها ( مخصوصا لپ تاپ ) دارای حروف فارسی نیستند و یا بنا به دلایلی حروف روی دکمه های کیبورد آنها به مرور زمان و استفاده از آن از بین رفته اند. لیبل کیبورد برچسب مناسبی برای این دسته از کیبورد هاست که دوباره شکل زیبای خودش رو سیستم به خود بگیره. این لیبل دارای حروف با عمر بسیار طولانی و قیمت مناسب بجای تعویض کیبورد به کمک شما میتواند بیاید. همچنین چسبندگی بسیار مناسب این لیبل در صورت تعویض لیبل نیز هیچ لک روی کیبورد شما به جا نمیگذارد. این لیبل برخلاف لیبل های دیگر موجود در بازار لغزندگی نیز با تایپ سریع شما به خود نمیگیرد و باعث جابجا شدن برچسب نمی شود. '
         ])->categories()->attach(1);
 
         Product::create([
-          'name'=>'Macbook Pro MD 102',
-          'slug'=>'macbook-pro-md-102',
-          'details'=>'15inch Monitor , 500GB SSD , 4GB RAM',
-          'price'=>53799,
-          'description'=>' Apple MacBook Pro MD101HN/A is a macOS laptop with a 13.30-inch display that has a resolution of 2560x1600 pixels. It is powered by a Core i5 processor and it comes with 4GB of RAM. The Apple MacBook Pro MD101HN/A packs 512GB of SSD storage.Connectivity options include Wi-Fi 802.11 ac, Bluetooth and it comes with 2 USB ports (2 x USB 3.0), Mic In ports.As of 12th November 2020, Apple MacBook Pro MD101HN/A price in India starts at Rs. 53,799.'
+          'name'=>'نظم دهنده سیم و کابل سیم زیپ به طول 2 متر',
+          'slug'=>'نظم-دهنده-سیم-و-کابل-سیم-زیپ-به-طول-دو-متر',
+          'details'=>'SIM ZIP Cable Easy Wrap model 2 meters',
+          'price'=>10000,
+          'description'=>'ارای طول 2 متر و قطر 22 میلی مترمناسب برای ساماندهی کابل ها و سیم هانظم دهنده و زیبا کننده محیط کار و منزلجلوگیری از شلوغی و درهم پیچیده شدن کابل هاکاهش حجم اشغال شده توسط سیم ها '
         ])->categories()->attach(1);
+
+        Product::create([
+          'name'=>'هدفون بی سیم',
+          'slug'=>'هدفون-بی سیم-مدل-inpods-12',
+          'details'=>'',
+          'price'=>20000,
+          'description'=>'از ویژگی های این دستگاه می توان به قابلیت کنترل تماس ها، وزن سبک، انتقال صدای استریو قابلیت کنترل پخش موزیک و امکان مکالمه اشاره کرد.این محصول با وزن بسیار کم و طراحی مینیمال و منحصر بفرد خود علاقمندان بسیاری پیدا کرده است چرا که با سازگاری با انواع مختلف گوشی های اندروید و آی او اس ، قابلیت پخش موزیک و امکان برقراری مکالمه همراه با حذف نویز محیط ، نیاز افراد زیادی را برطرف نموده است. یکی دیگر از مزیت های شارژ کامل در 2 ساعت و همینطور استفاده از باکس شارژ است که نکته جالب در این باکس‌ها آن است که همانند پاور بانک عمل می‌کنند شما به‌راحتی می‌توانید با شارژ نگه‌ داشتن باکس‌، هر زمان و در هرجایی که هستید با قرار دادن هدفون‌ها آن‌ها را شارژ کنید. طراحی هدفون به‌این شکل است که پشت آن یک دکمه تعبیه شده است که علاوه بر نقش پاور، شما می‌توانید با یک بار ضربه روی دکمه، موسیقی را پخش یا قطع کنید و برای عوض کردن موزیک کافی است دکمه را 2 ثانیه نگه دارید. از ویژگی‌های حایز اهمیت مدل دستیارصوتی بوده که به هنگام دریافت تماس شماره دریافتی را به‌صورت تکی بازگو می‌کند و با فشردن دکمه پشتی به‌آن تماس پاسخ دهید. طراحی بسیار شیک و کیفیتی راضی کننده به‌این محصول کمک کرده که رده قابل قبولی را در بین این گجت‌ها به خود اختصاص دهد. جهت اتصال دو هدفون به یکدیگر ابتدا هر دو را روشن کرده ،پس از روشن شدن چراغ های چشمک زن یکی از هندزفری ها را دو بار کلیک کرده تا به هندزفری دیگر اتصال یابد پس از ان بلوتوث دستگاه را روشن کرده و جستجو نمایید و به یکی از هندزفری ها متصل شوید، لازم به ذکر است مکالمه به صورت تک هندزفری و پخش موزیک با هر دو هندزفری امکان پذیر است. '
+        ])->categories()->attach(1);
+
 
         //personal appliance
         Product::create([
-          'name'=>'My Black Diamond Luxurious Mascara',
+          'name'=>'ریمل حجم دهنده مای',
           'slug'=>'my-black-diamond-luxurious-mascara',
-          'details'=>'    ضد آب: خیر ',
-          'price'=>79600,
-          'description'=>'ریمل حجم دهنده مای سری Black Diamond مدل Luxurious در حجم 15 میلی‌لیتر عرضه شده و به زیبایی هرچه تمام‌تر چشمان شما کمک می‌کند. از ویژگی‌های این ریمل می‌توان به جداکننده مژه‌ها ، مشکی کننده و برس باریک با استفاده آسان اشاره کرد. '
+          'details'=>'My Black Diamond Luxurious Volume Mascara',
+          'price'=>10000,
+          'description'=>' آرایش چشم از زمان قدیم تا به حال یکی از اصلی‌ترین نوع آرایش‌ها برای زیبایی صورت به حساب امده است. این امر نشان‌دهنده‌ اهمیت دادن ما به آرایش چشم بوده و یکی از لوازم آرایشی پرکاربرد استفاده از ریمل برای فرم دادن به مژه‌ها است. مژه‌ها یکی از اصلی‌ترین قسمت‌هایی هستند که به زیبایی چشم می‌افزایند. ریمل حجم دهنده مای در حجم 15 میلی‌لیتر عرضه شده و به زیبایی هرچه تمام‌تر چشمان شما کمک می‌کند. از ویژگی‌های این ریمل می‌توان به جداکننده مژه‌ها ، مشکی کننده و برس باریک با استفاده آسان اشاره کرد.  '
         ])->categories()->attach(2);
+
+        Product::create([
+          'name'=>'شامپو ضد شوره مردانه کلیر',
+          'slug'=>'شامپو-ضدشوره-مردانه-کلیر',
+          'details'=>'Clear Lemon Extract Shampoo For Men 400 ml',
+          'price'=>20000,
+          'description'=>'  بهترین و مناسب‌ترین شامپو محصولی است که بعد از استفاده از آن موها دچار خشکی و زبری نشوند. باید توجه داشته باشید که شامپوی نامناسب یا استفاده نامناسب از شامپو ممکن است سبب آسیب دیدگی بافت مو شود. مثلا نمی‌توان از تمام شامپوها هر روز استفاده کرد یا اگر موی بلند و پرپشتی دارید تمام آن به یک نسبت چرب یا کثیف نخواهد شد. پس در مورد انتخاب و روش استفاده از شامپو دقت کنید. همه‌ی شامپوها دارای ترکیباتی مشترک مانند سورفاکتانت (نوعی اسید چرب)، فوم بوستر، رنگ و اسانس‌ها هستند. شامپو ضد شوره مردانه کلیر ر حجم 400 میلی لیتری عرضه‌شده‌است. این شامپو مخصوص موهای آقایان بوده و خاصیت ضدشوره و کاهش‌دهنده‌ چربی دارد. شامپو کلیر حاوی عصاره لیمو بوده و بوی مطبوع و خوشایندی دارد. این شامپو برای افراد دارای موهای چرب و انواع موها مناسب است. پس اگر به سلامتی موهای خود اهمیت می‌دهید، می‌توانید این شامپو را انتخاب نمایید. '
+        ])->categories()->attach(2);
+
+
+
+        //vehicles
+        Product::create([
+          'name'=>'آفتابگیر شیشه خودرو مناسب برای پراید',
+          'slug'=>'آفتابگیر-شیشه-خودرو-مناسب-برای-پراید',
+          'details'=>'',
+          'price'=>5000,
+          'description'=>'آفتابگیر خودرو مناسب برای رودری خودرو برای سایه کردن و عدم نفوذ نور خورشید به داخل خودرو می باشد.'
+        ])->categories()->attach(3);
+
+        //apparel
+        Product::create([
+          'name'=>'کاپشن مردانه ماییلدا',
+          'slug'=>'کاپشن-مردانه-ماییلدا-',
+          'details'=>'',
+          'price'=>70000,
+          'description'=>'کاپشن های مردانه ماییلدا با طرح های متنوع و زیبا در رنگ های مختلف با کیفیت و جنس عالی ، با افتخار تولید ایران بوده. جنس این لباس ها ضد حساسیت بوده و از مواد درجه یک تولید شده. طراحی این محصول مشابه بروزترین مدل های خارجی می باشد. '
+        ])->categories()->attach(4);
+
+
+        //home-and-kitchen
+        Product::create([
+          'name'=>'سرویس 3 پارچه کفگیر ملاقه',
+          'slug'=>'سرویس-3-پارچه-کفگیر-ملاقه',
+          'details'=>'',
+          'price'=>10000,
+          'description'=>'سرویس 3 پارچه شامل یک عدد چنگال ، یک عدد کفگیر ماهی و یک عدد کفگیر لازانیا که دارای شیار برش غذا و سرو راحت تر است می باشد. این مجموعه کاربردی از جمله وسایل پرکاربرد و الزامی آشپزخانه و آشپزی است که با داشتن آن طبخ ساده و لذت بخشی را تجربه می کنید . این مجموعه از جنس تفلون بوده و باعث می شود به ظروف شما آسیب وارد نشود و مانع خط و خش آن می شود. این محصول بسیار ارگونومیک و متناسب با فیزیک و راحتی دست کاربر طراحی شده است ، یکی از ویژگی های این کالا داشتن برجستگی پشت آن است که باعث می شود ابزار مورد استفاده به راحتی لبه وسیله ( قابلمه ، ماهیتابه ..) شما قرار بگیرد البته در قسمت فوقانی هر کدام از این ابزار ها نیز حفره ای جهت آویزان کردن آنها به مکان دلخواه تعبیه شده است. استفاده از مواد اولیه با کیفیت و مرغوب تضمین رضایت شما و عمر کارکرد بالای این سرویس است. '
+        ])->categories()->attach(5);
+
+        Product::create([
+          'name'=>'جارو برقی پاکشوما',
+          'slug'=>'جارو-برقی-پاکشوما-مدل-25501',
+          'details'=>'Pakshoma PVC 25501 Vaccum Cleaner',
+          'price'=>450000,
+          'description'=>'حضورش کافی است تا تمیزی همیشه مهمان خانه‌ی شما باشد. جاروبرقی پاکشوما همراهی مطمئن برای شما بوده و کثیفی را به خانه‌ی شما راه نمی‌دهد. این جاروبرقی دارای سیم جمع‌کن خودکار بوده و به راحتی سیم ۱۲ متری آن جمع‌ می‌شود. این سیم ۱۲ متری شعاع کارکرد ۱۵ متر داشته و طیف وسیعی از فضای خانه را تشکیل می‌دهد. '
+        ])->categories()->attach(5);
+
+
+
+        //book-and-media
+        Product::create([
+          'name'=>'کتاب قلعه حیوانات اثر جورج اورول',
+          'slug'=>'کتاب-قلعه-حیوانات-اثر-جورج-اورول-انتشارات-پرثوآ',
+          'details'=>'',
+          'price'=>5000,
+          'description'=>' کتاب قلعه حیوانات اثر جورج اورول، به ‌طور غیر مستقیم اشاره به شرایط حاکم بر شوروی سابق در طول جنگ جهانی دوم دارد. مزرعه حیوانات که در ایران به نام قلعه حیوانات نیز شناخته شده، در کنار رمان 1984 دو اثر ماندگار و شاخص جورج اورول، نویسنده و روزنامه ‌نگار انگلیسی است که به عنوان پر فروش‌ترین آثار این نویسنده قرن بیستم معرّف همگان است. داستان این کتاب درباره حیوانات «مزرعه ‌ی اربابی» است که به آقای جونز تعلق دارد. جونز مردی ‌ست که بیشتر اوقات مست می ‌کند و به شکل مناسبی به امورات مزرعه و حیوانات رسیدگی نمی‌ کند. در میان حیوانات مزرعه ‌ی آقای جونز، خوک پیری به نام میجر وجود دارد که از آبرو و احترام ویژه ‌ای میان حیوانات برخوردار است. اما میجر، بسیار پیر است و در این روزهای آخر عمرش می ‌خواهد تمام اندوخته‌ ی حکمت و معرفت خود را در اختیار دیگر حیوانات قرار دهد. به همین خاطر یک سخنرانی هیجان ‌انگیز و باشکوه درباره آینده درخشان، درباره آزادی و درباره انقلاب حیوانات مزرعه علیه موجودات دوپا ارائه می ‌کند. سخنرانی که چشم دیگر حیوانات را باز می ‌کند'
+        ])->categories()->attach(6);
+
+
+
+        //mother-and-child
+        Product::create([
+          'name'=>'اسباب بازی کوکی',
+          'slug'=>'اسباب-بازی-کوکی',
+          'details'=>'',
+          'price'=>5000,
+          'description'=>' این خرگوش بسیار با مزه یک اسباب بازی کوکی سرگرم کننده برای دلبند شما است. علاوه بر سرگرمی دلبند شما می تواند با کوک کردن این اسباب بازی و چرخاندن کوک قدرت دست های خود را تقویت نماید. لازم به ذکر است کیفیت پلاستیک آن به گونه ای است که فاقد براده های تیز می باشد و خطری برای دلبند شما نخواهد داشت. این خرگوش با مزه در پنج رنگ متفاوت عرضه می شود.'
+        ])->categories()->attach(7);
+
+        Product::create([
+          'name'=>'تفنگ اسباب بازی',
+          'slug'=>'تفنگ-اسباب-بازی',
+          'details'=>'',
+          'price'=>6000,
+          'description'=>'خرید اسباب بازی یکی از مهم ترین و دوست داشتنی ترین بخش های زندگی والدینی است که منتظر تولد فرزند خود هستند. گاهی کودکان از یک اسباب بازی پلاستیکی و ارزان خیلی بیشتر از یک اسباب بازی گران و پیچیده لذت می برند. بهتر است والدین بدانند هر قدر اسباب بازی شکل غیراختصاصی تر و بنیادی تری داشته باشد، قوه تخیل کودک را بیشتر تحریک می کند.این مجموعه اسباب بازی های ساده و ارزان سی دا، برای همین افراد است. کسانی که با بودجه ای اندک، بدنبال خرید اسباب بازی های جالب و مهیجی برای کودکانشان هستند و سعی در شادی آنها دارند.'
+        ])->categories()->attach(7);
+
+
+
+        //sport entertainment
+        Product::create([
+          'name'=>'دمبل رکورد 2 کیلوگرمی',
+          'slug'=>'دمبل-رکورد-وزن-2-کیلوگرمی',
+          'details'=>'',
+          'price'=>20000,
+          'description'=>'امروزه یکی از ورزش‌های پرطرفدار ورزش در خانه یا بدن‌سازی با دمبل است. دمبل را می‌توان در اغلب منازل دید. اکثر عضلات‌ بالاتنه‌ی بدن با استفاده از دمبل تقویت می‌شوند. البته هرکسی که با دمبل تمرین کرده باشد، غلتیدن ناخواسته و آزاردهنده‌ی آن‌ را هم تجربه کرده است. یکی از راه‌حل‌های این مشکل هندسی ساختن این دمبل ها است . «دمبل ایروبیک روکش‌دار 5کیلوگرمی – دوعددی» با شکل هندسی جدید خود باعث می‌شود که آن را بدون نگرانی از غلتیدن، بعد از تمرین روی زمین گذاشته و به استراحت بپردازید. وزن دمبل‌ها متفاوت است و انواع مختلفی دارند. این دمبل قابلیت اضافه‌کردن وزنه ندارد. دورتادور این دمبل، روکش پلاستیکی بسیار قوی کشیده شده است که از کثیفی، زنگ‌زدگی و آسیب‌رسیدن به محصول جلوگیری می‌کند. روکش این دمبل را به صورتی طراحی‌ کرده‌اند که به کف دست هیچ آسیبی نمی‌رساند و از آسیب‌رساندن و جاانداختن روی دست جلوگیری می‌کند. '
+        ])->categories()->attach(8);
+
+
+        //food beverage
+        Product::create([
+          'name'=>'قهوه فوری 3 در 1 نسکافه',
+          'slug'=>'قهوه-فوری-3-1-نسکافه-بسته-20-عددی',
+          'details'=>'Nescafe 3 in 1 Coffee Powder Pack Of 20',
+          'price'=>30000,
+          'description'=>'قهوه دوستی است که در تمام روز در کنار ما خواهدبود. شروع صبحی زیبا با یک فنجان قهوه‌ی تازه از لذت‌هایی است که به دنبال آن هستیم. هنگامیکه احساس خستگی کرده و نیاز به نیرویی دوباره برای ادامه‌ی فعالیت‌های خود داریم، قهوه دوستی وفادار درکنار ما است. پودر قهوه فوری 1 × 3 نسکافه در بسته‌بندی 20 عددی در اختیار ما قرار می‌گیرد. این محصول مخلوطی مناسب از قهوه، پودرخامه‌ای‌کننده و شکر با طعمی فوق‌العاده و دلچسب است. نسکافه 1 × 3 کلاسیک از دانه‌های باکیفیت قهوه، ساخت ایران بوده و در کارخانه قزوین شرکت نستله ایران تولید شده‌است. گفتنی است این محصول نیازی به اضافه‌کردن شکر ندارد. این محصول فاقد نمک و اسیدهای چرب ترانس است و باخیال راحت می‌توانید از نوشیدن آن لذت ببرید. پودر قهوه فوری 1 × 3 نسکافه محصولی خوش‌طعم و خوش‌عطر است که در سریع‌ترین زمان ممکن در اختیار شما قرار می‌گیرد. پیچیدن بوی نسکافه در فضای خانه از لذت‌های تکرار نشدنی است.  '
+        ])->categories()->attach(9);
+
+
+
 
 
 

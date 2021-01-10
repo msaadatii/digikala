@@ -43,8 +43,8 @@
                        <img width="150px" src="{{asset('img/products/'.$item->model->slug.'.jpg')}}">
                      </a>
                   </td>
-                  <td> {{$item->name}}</td>
-                  <td> {{$item->model->presentPrice($item->subtotal)}}</td>
+                  <td>{{$item->name}} </td>
+                  <td> {{$item->model->presentPrice($item->subtotal)}} تومان</td>
                   <td>
                       <div class="select is-rounded">
                         <select class="quantity" data-id="{{$item->rowId}}">
@@ -59,14 +59,14 @@
                     <form action ="{{route('cart.destroy',$item->rowId)}}"method="post">
                       {{csrf_field()}}
                       {{method_field('DELETE')}}
-                      <button type="submit" class="button is-danger is-outlined  "><i class="fas fa-trash fa-1x fa-fw"></i></button>
-                      <span class="is-size-6 has-text-grey n"> حذف </span>
+                      <button type="submit" class="button is-danger is-outlined  " style="  padding: 10px; margin-bottom: 10px;"><i class="fas fa-trash fa-1x fa-fw"></i></button>
+                      <span class="is-size-7 has-text-grey n"> حذف </span>
                     </form>
                     {{--save one product one later--}}
                     <form action ="{{route('cart.saveForLater',$item->rowId)}}"method="post">
                       {{csrf_field()}}
-                      <button type="submit" class="button is-info is-outlinedn"><i class="fas fa-save fa-1x fa-fw"></i> </button>
-                      <span class="is-size-6 has-text-grey">ذخیره در لیست خرید بعدی</span>
+                      <button type="submit" class="button is-info is-outlinedn" style="padding: 10px; margin-bottom: 10px;"><i class="fas fa-save fa-1x fa-fw"></i> </button>
+                      <span class="is-size-7 has-text-grey">ذخیره در لیست خرید بعدی</span>
                     </form>
                   </td>
                 </tr>
@@ -114,13 +114,13 @@
                                   <form action="{{route('coupon.store')}}" method="post">
                                       {{csrf_field()}}
                                       <input type="text" name="coupon_code" placeholder="کد تخفیف ؟ " class="input">
-                                      <button type="submit" class="button is-dk-red is-fullwidth" name="button" style="padding:25px;" >اعمال تخفیف</button>
+                                      <button type="submit" class="button is-info is-fullwidth" name="button" style="padding:25px;" >اعمال تخفیف</button>
                                   </form>
                               </div>
                        @endif
                        <hr>
 
-                       <a class="button is-dk-red is-fullwidth"  href="{{route('checkout.index')}}" style="padding:25px;" >ادامه ثبت سفارش </a>
+                       <a class="button is-info is-fullwidth"  href="{{route('checkout.index')}}" style="padding:25px;" >ادامه ثبت سفارش </a>
                </div>
          </div>
 
@@ -139,20 +139,26 @@
               </a>
            </td>
            <td> {{$item->name}}</td>
-           <td> {{$item->price}}</td>
+           <td> {{$item->price}} تومان</td>
            <td>
              {{--delete one product from cart--}}
              <form action ="{{route('cart.destroySavedForLater',$item->rowId)}}"method="post">
                {{csrf_field()}}
                {{method_field('DELETE')}}
-               <button type="submit" class="button is-danger is-outlined"><i class="fas fa-trash fa-1x fa-fw"></i></button>
-               <span class="is-size-6 has-text-grey"> حذف </span>
+
+               <button type="submit" class="button is-danger is-outlined  " style="  padding: 10px; margin-bottom: 10px;" >
+                 <i class="fas fa-trash fa-1x fa-fw"></i>
+               </button>
+
+               <span class="is-size-7 has-text-grey"> حذف </span>
              </form>
              {{--save one product one later--}}
              <form action ="{{route('cart.switchFromSaveToCart',$item->rowId)}}"method="post">
                {{csrf_field()}}
-               <button type="submit" class="button is-success is-outlined"><i class="fas fa-cart-plus fa-1x fa-fw"></i> </button>
-               <span class="is-size-6 has-text-grey">افزودن به سبد خرید </span>
+               <button type="submit" class="button is-success is-outlinedn" style="padding: 10px; margin-bottom: 10px;">
+                 <i class="fas fa-cart-plus fa-1x fa-fw"></i>
+               </button>
+               <span class="is-size-7 has-text-grey">افزودن به سبد خرید </span>
              </form>
            </td>
          </tr>
@@ -189,22 +195,23 @@
         </a>
      </td>
      <td> {{$item->name}}</td>
-     <td> {{$item->price}}</td>
+     <td> {{$item->price}} تومان</td>
      <td>
        <div class="dk-table-cart">
        {{--delete one product from cart--}}
        <form action ="{{route('cart.destroySavedForLater',$item->rowId)}}"method="post">
          {{csrf_field()}}
          {{method_field('DELETE')}}
-         <button type="submit" class="button is-danger is-outlined"><i class="fas fa-trash fa-1x "></i></button>
-         <span class="is-size-6 has-text-grey">حذف</span>
+         <button type="submit"class="button is-danger is-outlined  " style="  padding: 10px; margin-bottom: 10px;"><i class="fas fa-trash fa-1x "></i></button>
+         <span class="is-size-7 has-text-grey">حذف</span>
        </form>
        {{--save one product one later--}}
        <form action ="{{route('cart.switchFromSaveToCart',$item->rowId)}}"method="post">
          {{csrf_field()}}
-         <button type="submit" class="button is-success is-outlined"><i class="fas fa-cart-plus fa-1x "></i> </button>
-         <span class="is-size-6 has-text-grey">افزودن به سبد خرید </span>
+         <button type="submit" class="button is-success is-outlinedn" style="padding: 10px; margin-bottom: 10px;"><i class="fas fa-cart-plus fa-1x "></i> </button>
+         <span class="is-size-7 has-text-grey">افزودن به سبد خرید </span>
        </form>
+       <hr>
      </div>
      </td>
    </tr>

@@ -14,7 +14,7 @@ class CouponsTableSeeder extends Seeder
         //creat sample coupons in diffrent type
         Coupon ::create([
 
-          'code'=>'xyz123',
+          'code'=>'yalda',
           'type'=>'fixed',
           'value'=>9000,
         ]);
@@ -22,7 +22,7 @@ class CouponsTableSeeder extends Seeder
 
         Coupon ::create([
 
-          'code'=>'xyz456',
+          'code'=>'hidk',
           'type'=>'percent_off',
           'percent_off'=>30,
         ]);

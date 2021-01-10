@@ -12,6 +12,7 @@
   <div class="container">
      @yield('cart')
     </div>
+     @include('layout.footer')
   {{--js files--}}
   @yield('extra-js')
   <script src="js/scripts.js"></script>

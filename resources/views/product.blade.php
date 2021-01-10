@@ -1,14 +1,19 @@
 @extends('layout.layout-product')
 @section('product-details')
-<div class="columns dk-product">
- <div class="column">
-<img src="{{asset('img/products/'.$product->slug.'.jpg')}}" alt="Placeholder image">
-  </div>
-  <div class="column is-half ">
-  <div>{{$product->name}}</div>
-  <div class="is-size-7">{{$product->details}}</div>
+<div class="columns dk-product" >
+ <div class="column " style="margin:20px;">
+   <figure class="image is-3by2">
+    <img  src="{{asset('img/products/'.$product->slug.'.jpg')}}" alt="Placeholder image">
+  </figure>
+ </div>
+  <div class="column auto" style="margin:20px;">
+  <div class="has-text-black">
+     <span class="title is-5">{{$product->name}}</span>
+   </div>
+  <div class=" has-text-grey-light">{{$product->details}}</div>
   <hr>
   <div class="has-text-danger">{{$product->presentPrice($product->price)}} تومان </div>
+  <hr>
   <div class ="">
     <form  action="{{route('cart.store')}}" method="post">
       {{csrf_field()}}
@@ -18,14 +23,15 @@
       <input type="hidden" name="price" value="{{$product->price}}">
       <button type="submit" name="button" class ="button is-dk-green"><i class="fas fa-shopping-cart fa-fw"></i> افزودن به سبد خرید </button>
     </form>
-
   </div>
+
    </div>
-   <div class="column auto">
-     ویژگی های محصول :
+   <div class="column auto  " style="margin:20px;">
+  <span class="title is-6"> ویژگی های محصول : </span>
+  <hr>
      <ul>
       @foreach ($features as $feature)
-        <li> {{$feature->name}} : {{$feature->value}}</li>
+        <li> {{$feature->name}} :  {{$feature->value}}</li>
 
       @endforeach
      </ul>
@@ -33,17 +39,21 @@
  </div>
 <hr>
  <div class ="columns dk-product">
-  <div class ="column is-one-third">
-   <i class="fas fa-pen-fancy fa-4x has-text-danger"></i>
+  <div class ="column is-one-third" style="text-align:center;  margin: auto;">
+   <i class="fas fa-pen-fancy fa-7x has-text-danger"></i>
   </div>
   <div class ="column">
+    <div class="is-size-4 ">
+      نقد و بررسی اجمالی  :
+    </div>
+    <hr>
      {{$product->description}}
    </div>
 </div>
 <hr>
 <div class="dk-product">
-  <div class="is-size-4">
-    محصولات مرتبط  :
+  <div class="is-size-4 " style="padding:10px">
+    محصولات دیگر  :
   </div>
   <hr>
   <div class="columns">
